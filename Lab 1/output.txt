@@ -1,0 +1,40 @@
+SQL> select table_name from all_tables where owner='UNIVERSITY';
+
+TABLE_NAME                                                                      
+------------------------------                                                  
+STUDENTS                                                                        
+SECTIONS                                                                        
+MEMBERSHIP                                                                      
+HONORSINFO                                                                      
+GRADEVALUES                                                                     
+FACULTY                                                                         
+ENROLLMENTS                                                                     
+COURSES                                                                         
+CLUBS                                                                           
+
+9 rows selected.
+
+SQL> select * from university.faculty;
+
+FID    NAME            PHONE                                                    
+------ --------------- --------                                                 
+987651 Dr. Jones       555-8734                                                 
+987652 Dr. Smith       555-9786                                                 
+987653 Dr. Davis       555-1265                                                 
+987654 Dr. Hawking     444-3423                                                 
+987655 Dr. Ravell      555-7846                                                 
+
+SQL> select * from university.clubs;
+
+NAME       ADVISO YEARFORMED                                                    
+---------- ------ ----------                                                    
+Chess      987655       1954                                                    
+Book       987652       1933                                                    
+Scuba      987651       1965                                                    
+Acting     987655       1977                                                    
+Photo      987651       1962                                                    
+Ski        987653       1988                                                    
+
+6 rows selected.
+
+SQL> spool off

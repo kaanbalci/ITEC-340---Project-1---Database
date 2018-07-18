@@ -1,0 +1,19 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+\margl1440\margr1440\vieww18560\viewh10460\viewkind0
+\deftab720
+\pard\pardeftab720\sl400
+
+\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 CREATE\cf0 \strokec0  \cf2 \strokec2 PROCEDURE\cf0 \strokec0  \cf2 \strokec2 p_Search (@aCompanyName VARCHAR(50),\
+						@bCompanyId INT,\
+						@cOutput VARCHAR(150) OUT)\
+AS \
+BEGIN\
+SELECT cOutput = Company_Name, Company_ID Account_ID, Contact_Phone, 					Contact_FirstName+\'92 \'91+Contact_LastName, 							Contact_Title, Contact_Email \
+FROM Company, Account, Account_Contact \
+WHERE aCompanyName = Company_name AND bCompanyId = Company_ID\
+END\cf0 \strokec0 \
+\
+}
