@@ -1,4 +1,1 @@
-# ITEC-340---Project-1---Database
-# ITEC-340---HW3---DDL
-# ITEC-340---HW3---DDL
-# ITEC-340---H3---DDL
+ITEC-340 HW3 DDL
